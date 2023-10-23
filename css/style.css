@@ -91,11 +91,11 @@ ul li {
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 16px;
-    padding: 24px 0;
+    padding: 24px 0 25px; /* костыль, потому что не перекрываем бардюр хедера, а ложимся на него почему-то, и имеем 67.2 высоты у ссылки ( подительского блока по сути для линии ховера ) вместо положенной 72пх */   
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
- .navigation .button-menu::after{
+ .navigation .act-button-menu::after{
     content: '';
     position: absolute;
     left: 0;
@@ -137,6 +137,8 @@ ul li {
 /**------ SECTION 1 ------*/
 
 .first-section {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #2e2f42;
     padding: 188px 0;
     background-repeat: no-repeat;
@@ -169,6 +171,7 @@ ul li {
     height: 56px;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first-section-button:hover, .first-section-button:focus {
     background-color: #404BBF;
@@ -188,6 +191,16 @@ ul li {
 }
 .elm-list-sec-sect{
     flex-basis: calc((100% - 3 * 24px) / 4)
+}
+.icon-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    margin-bottom: 8px;
 }
 .capt-sec-sect{
     margin-bottom: 8px;
