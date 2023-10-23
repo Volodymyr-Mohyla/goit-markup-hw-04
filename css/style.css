@@ -425,4 +425,7 @@ ul li {
     width: 40px;
     height: 40px;
 }
+.list-ikon-soc-foot .linc-ikon-soc:hover,.list-ikon-soc-foot .linc-ikon-soc:focus{
+    background-color: #31d0aa;
+}
 /*------ END SECTION FOOTER ------*/
