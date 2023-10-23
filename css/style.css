@@ -51,6 +51,7 @@ ul li {
 .header{
     border-bottom: 1px solid #e7e9fc;
    /*height: 71px;*/
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .head-cont{
     display: flex;
@@ -84,13 +85,24 @@ ul li {
 
 .navigation .button-menu {
     text-decoration: none;
-    color: #2E2F42;
+    color: #404bbf
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 16px;
     padding: 24px 0;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+ .navigation .button-menu::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+ }
 .button-menu:hover, .button-menu:focus {
     color: #404BBF;
 }
@@ -103,6 +115,7 @@ ul li {
 }
 .address .elm-list-in-adr{
     padding: 24px 0;
+    
 }
 .address-link {
     text-decoration: none;
@@ -110,6 +123,7 @@ ul li {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-size: 16px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover, .address-link:focus{
     color: #404BBF;
@@ -123,6 +137,13 @@ ul li {
 .first-section {
     background-color: #2e2f42;
     padding: 188px 0;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+         rgba(46, 47, 66, 0.70), 
+         rgba(46, 47, 66, 0.70)), 
+         url(../images/people-office.jpg);
+    background-position: center;
+    background-size: cover;    
 }
 .first-section .title {
     color: #ffffff;
