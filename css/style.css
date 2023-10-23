@@ -401,4 +401,28 @@ ul li {
     display: inline-block;
     margin-bottom: 16px;
 }
+.footer-div{
+    display: flex;
+    align-items: baseline;
+}
+.footer-logo-text{
+    margin-right: 120px;
+}
+.footer-p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.list-ikon-soc-foot{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.elem-list-ikon-foot{
+    width: 40px;
+    height: 40px;
+}
 /*------ END SECTION FOOTER ------*/
