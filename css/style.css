@@ -50,7 +50,7 @@ ul li {
 /**--- HEADER SECTION---*/
 .header{
     border-bottom: 1px solid #e7e9fc;
-   /*height: 71px;*/
+    height: 71px;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .head-cont{
@@ -79,13 +79,14 @@ ul li {
     display: flex;
     gap: 40px;
 }
+/* зараза из-за которой пол пикселя отступа было лишнего!
 .navigation .list-in-navigation{
     padding: 24px 0;
-}
+}*/
 
 .navigation .button-menu {
     text-decoration: none;
-    color: #404bbf
+    color: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -100,6 +101,7 @@ ul li {
     left: 0;
     bottom: -1px;
     height: 4px;
+    width: 100%;
     background-color: #404bbf;
     border-radius: 2px;
  }
@@ -114,7 +116,7 @@ ul li {
     gap: 40px;
 }
 .address .elm-list-in-adr{
-    padding: 24px 0;
+    padding: 24px 0 23px;
     
 }
 .address-link {
